@@ -11,7 +11,9 @@
         <h1>List</h1>
     </header>
     <ul>
-        <li v-for="task in toDo">
+        <li v-for="task in toDo" :class="{
+            'barrato': task.alreadyDid == true
+            }">
             {{ task.do }}
             
         </li>

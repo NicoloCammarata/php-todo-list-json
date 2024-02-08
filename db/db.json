@@ -5,7 +5,7 @@
     },
     {
         "do": "Fare la spesa",
-        "alreadyDid": false
+        "alreadyDid": true
     },
     {
         "do": "Fare la lavatrice",

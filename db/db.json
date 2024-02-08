@@ -1,0 +1,14 @@
+[
+    {
+        "do": "Fare i compiti",
+        "alreadyDid": false
+    },
+    {
+        "do": "Fare la spesa",
+        "alreadyDid": false
+    },
+    {
+        "do": "Fare la lavatrice",
+        "alreadyDid": false
+    }
+]

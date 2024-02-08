@@ -1,6 +1,6 @@
 <?php
 
-$students = [
+/*$students = [
     [
         'do' => 'Fare i compiti',
         'alreadyDid' => false
@@ -13,10 +13,12 @@ $students = [
         'do' => 'Fare la lavatrice',
         'alreadyDid' => false
     ],
-];
+];*/
+
+$stringaJSONPresaDalDB = file_get_contents('db/db.json');
 
 // Dico al client che la risposta contiene un json
 header('Content-Type: application/json');
 
 // Rispondo con il json preso dal file
-echo json_encode($students);
+echo $stringaJSONPresaDalDB;

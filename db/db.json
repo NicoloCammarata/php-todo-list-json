@@ -1,14 +1,1 @@
-[
-    {
-        "do": "Fare i compiti",
-        "alreadyDid": false
-    },
-    {
-        "do": "Fare la spesa",
-        "alreadyDid": true
-    },
-    {
-        "do": "Fare la lavatrice",
-        "alreadyDid": false
-    }
-]
+[{"do":"fare i compiti","alreadyDid":true},{"do":"fare la spesa","alreadyDid":false},{"do":"fare il bucato","alreadyDid":true},{"do":"eedv","alreadyDid":false}]

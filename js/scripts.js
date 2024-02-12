@@ -3,14 +3,12 @@ createApp({
     data() {
         
         return {
-            toDo: []
-        }
+            toDo: [],
+            newtodo: ''
+        };
         
         
         
-    },
-    methos: {
-
     },
     mounted() {
         axios
@@ -20,5 +18,34 @@ createApp({
                 this.toDo = res.data;
                 console.log(this.toDo);
             });
-    }
+    },
+    
+    methods: {
+
+
+        addTodo(){
+
+            
+            axios
+                .post('http://localhost/booleanPHP/php-todo-list-json-1/new-todo.php',{
+                        do: this.newtodo
+                    },
+                    {
+                        headers: {
+                            'Content-Type' : 'multipart/form-data'
+                        }
+                    },
+                )
+                .then((res) => {
+                    console.log(res);
+                    
+                });
+        },
+        
+
+        
+
+    },
+    
+    
 }).mount('#app');

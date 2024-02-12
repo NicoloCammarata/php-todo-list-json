@@ -10,6 +10,15 @@
     <header>
         <h1>List</h1>
     </header>
+    <div>
+        
+            <input type="text" v-model="newtodo">    
+            <button @click="addTodo()" >click</button>
+
+        
+        
+        
+    </div>
     <ul>
         <li v-for="task in toDo" :class="{
             'barrato': task.alreadyDid == true
@@ -17,6 +26,7 @@
             {{ task.do }}
             
         </li>
+        
     </ul>
 
     
@@ -25,7 +35,6 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
     <script src="js/scripts.js"></script>
 </body>
 </html>
